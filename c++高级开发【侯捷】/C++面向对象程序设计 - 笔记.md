@@ -66,7 +66,7 @@ pubilc > protected > private(所有的数据都应该放在 private，打算被�
 - 可以有很多重名的构造函数，即构造函数重载
 - 重载real函数时，其实编译器会编译成两个函数，虽然同名但不重载
 - 黄色标注的构造函数定义将出现问题，与上面的构造函数存在冲突，在无参初始化该类对象时，因为第一个构造函数已经有参数默认初始化列表了，定义该类对象时可以不加入参数，这就产生了冲突。
-- ctor放在private中：设计模式-单例
+- **ctor放在private中：设计模式-单例**
 
 <img src="https://gitee.com/sparkle_zz/markdown-pics/raw/master/image-20201107185430789.png" alt="image-20201107185430789" style="zoom:50%;" />
 

@@ -6,15 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/Users/jinzhuoqun/MyGreenna/Notes/LearningC++/Code/Chapter3/TypeConversion.cpp
-TypeConversion.h
-/Users/jinzhuoqun/MyGreenna/Notes/LearningC++/Code/Chapter3/TypeConversion.h
+/Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter3/arrayTest.cpp
+iteratorUsing.h
+/Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter3/iteratorUsing.h
+string
+-
 iostream
 -
-iterator
+map
 -
-sstream
+vector
 -
+arrayTest.h
+/Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter3/arrayTest.h
 
-/Users/jinzhuoqun/MyGreenna/Notes/LearningC++/Code/Chapter3/TypeConversion.h
+/Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter3/arrayTest.h
+
+/Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter3/iteratorUsing.h
 

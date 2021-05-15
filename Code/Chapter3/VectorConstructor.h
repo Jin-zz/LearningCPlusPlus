@@ -5,7 +5,8 @@
 #ifndef CHAPTER3_VECTORCONSTRUCTOR_H
 #define CHAPTER3_VECTORCONSTRUCTOR_H
 
-
+void  VectorConstructor();
+void  output();
 class VectorConstructor {
 
 };

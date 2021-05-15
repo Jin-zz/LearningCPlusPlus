@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/jinzhuoqun/MyGreenna/Notes/LearningC++/Code/Chapter3
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter3
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/jinzhuoqun/MyGreenna/Notes/LearningC++/Code/Chapter3/cmake-build-debug
+-- Build files have been written to: /Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter3/cmake-build-debug

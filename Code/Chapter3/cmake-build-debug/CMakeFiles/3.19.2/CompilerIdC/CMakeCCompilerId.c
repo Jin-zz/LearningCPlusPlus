@@ -327,7 +327,7 @@ char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";
 char const* qnxnto = "INFO" ":" "qnxnto[]";
 #endif
 
-#if defined(__CRAYXE) || defined(__CRAYXC)
+#if defined(_CRAYC) || defined(__cray__)
 char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";
 #endif
 
@@ -419,6 +419,9 @@ char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";
 
 # elif defined(__WINDOWS__)
 #  define PLATFORM_ID "Windows3x"
+
+# elif defined(__VXWORKS__)
+#  define PLATFORM_ID "VxWorks"
 
 # else /* unknown platform */
 #  define PLATFORM_ID
@@ -536,6 +539,24 @@ char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";
 # else /* unknown architecture */
 #  define ARCHITECTURE_ID ""
 # endif
+
+#elif defined(__TI_COMPILER_VERSION__)
+# if defined(__TI_ARM__)
+#  define ARCHITECTURE_ID "ARM"
+
+# elif defined(__MSP430__)
+#  define ARCHITECTURE_ID "MSP430"
+
+# elif defined(__TMS320C28XX__)
+#  define ARCHITECTURE_ID "TMS320C28x"
+
+# elif defined(__TMS320C6X__) || defined(_TMS320C6X)
+#  define ARCHITECTURE_ID "TMS320C6x"
+
+# else /* unknown architecture */
+#  define ARCHITECTURE_ID ""
+# endif
+
 #else
 #  define ARCHITECTURE_ID
 #endif
@@ -616,7 +637,6 @@ char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";
 
 
 
-
 #if !defined(__STDC__)
 # if (defined(_MSC_VER) && !defined(__clang__)) \
   || (defined(__ibmxl__) || defined(__IBMC__))
@@ -661,7 +681,7 @@ int main(int argc, char* argv[])
 #ifdef SIMULATE_VERSION_MAJOR
   require += info_simulate_version[argc];
 #endif
-#if defined(__CRAYXE) || defined(__CRAYXC)
+#if defined(_CRAYC) || defined(__cray__)
   require += info_cray[argc];
 #endif
   require += info_language_dialect_default[argc];

@@ -33,6 +33,8 @@
   C++ 代码练习 https://github.com/yangsoon/cpptest
 
   侯捷C++课程PPT及代码,动手学起来  https://github.com/harvestlamb/Cpp_houjie
+  
+  《c++primer》答案 https://github.com/huangmingchuan/Cpp_Primer_Answers/blob/master/ch04/README.md
 
 
 

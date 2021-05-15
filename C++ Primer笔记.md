@@ -253,3 +253,25 @@ cout<< "begin(values):" <<*beg <<endl;
 cout<< "end(values) - 1:" <<*las <<endl;
 ```
 
+
+
+
+
+
+
+
+
+
+
+
+
+## 其他问题
+
+### 溢出
+
+```c++
+short value = 32767; //short类型最大值
+value += 1;  //溢出
+cout << value << endl;  // 原本符号位为0，由于溢出变成1，输出负值：-32767
+```
+

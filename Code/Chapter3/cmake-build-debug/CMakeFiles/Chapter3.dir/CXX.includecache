@@ -6,21 +6,27 @@
 
 #IncludeRegexTransform: 
 
-/Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter3/arrayTest.cpp
-iteratorUsing.h
+/Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter3/StringConstructor.h
+
+/Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter3/TypeConversion.h
+
+/Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter3/VectorConstructor.h
+
+/Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter3/arrayTest.h
+
 /Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter3/iteratorUsing.h
-string
--
+
+/Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter3/main.cpp
 iostream
 -
-map
--
-vector
--
+StringConstructor.h
+/Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter3/StringConstructor.h
+TypeConversion.h
+/Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter3/TypeConversion.h
+VectorConstructor.h
+/Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter3/VectorConstructor.h
+iteratorUsing.h
+/Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter3/iteratorUsing.h
 arrayTest.h
 /Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter3/arrayTest.h
-
-/Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter3/arrayTest.h
-
-/Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter3/iteratorUsing.h
 

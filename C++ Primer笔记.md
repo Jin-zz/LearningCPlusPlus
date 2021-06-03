@@ -313,7 +313,26 @@ cout<< "end(values) - 1:" <<*las <<endl;
 
 
 
+## 语句
 
+- switch 语句
+
+  - case 需要与 break 搭配，否则会继续往下运行
+
+  - case 标签值是常量 -> 整形常量表达式：整型常数、字符常数、浮点常数、枚举常数、类型强制转换、`sizeof` 表达式和其他常数表达式
+
+  - 多个 case 一起使用：
+
+    ```c++
+    switch(val):
+    	case 1: case 2: case 3: case 4: case 5:  
+    		++val;
+    		break;
+      default:
+    		break;
+    ```
+
+  - 建议 switch 语句都带上 default 标签
 
 ## 其他问题
 

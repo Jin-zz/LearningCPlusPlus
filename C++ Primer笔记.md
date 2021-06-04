@@ -142,15 +142,20 @@ vector<vector<int>> v8;
 ### 基本操作
 
 ```
-//添加元素
+//尾部 添加元素
 v.push_back(num);
-//删除元素 改变size 不改变capacity
+//尾部 删除元素 改变size 不改变capacity
 v.pop_back();
 //size
 v.size()
 //empty
 v.empty()
-
+//取 vector 头部元素
+v.front()
+//取 vector 尾部元素
+v.back()
+//删除指定索引元素 [first,last) 会改变 vector size
+v.erase(first, last); 
 //遍历
 //for(auto val : v){  // 改变 value 不会改变 v
 for(auto &val : v){
@@ -333,6 +338,29 @@ cout<< "end(values) - 1:" <<*las <<endl;
     ```
 
   - 建议 switch 语句都带上 default 标签
+  
+- for 语句
+
+  - c++11 新引入了 范围for语句：
+
+  ```
+  for(auto xx : expression){
+  	// expression 是一种可遍历序列
+  	// &xx 可以改变原变量值
+  }
+  ```
+
+- do while 
+
+  ```
+  do {
+  	//....
+  }while(xxx)
+  ```
+
+- coutinue 不用于 switch
+
+- 不要在程序中使用 goto 语句 `goto label`
 
 ## 其他问题
 
@@ -342,5 +370,55 @@ cout<< "end(values) - 1:" <<*las <<endl;
 short value = 32767; //short类型最大值
 value += 1;  //溢出
 cout << value << endl;  // 原本符号位为0，由于溢出变成1，输出负值：-32767
+```
+
+## 异常处理
+
+- throw 表达式 ： 抛出异常，并且把控制权转移到能处理该异常的最近 catch 子句
+
+  - `throw 关键字 + 抛出的异常类型 ;`
+  - 标准库异常类型 定义在头文件 `stdexcept`中
+  - e.g `throw runtime_error("Data must refer to same ISBN");`
+
+- try 语句 ： 处理异常，以关键字 try 开始，以一个或多个 **catch** 子句结束，如果 try 语句块的代码引发异常并且其中一个 catch 子句匹配该异常类型，则异常被该 catch 语句处理，否则会转到外围语句块处理 or 程序终止
+  ```
+  try {
+  	//...
+  } catch (异常声明) {
+  	//..
+  } catch (异常声明) {
+  	//..
+  } //..
+  ```
+
+  - 当 try 语句块中，调用了其他含有 try 语句块的函数，一旦抛出异常，会先在本函数中寻找匹配的 catch 子句，然后逐层回退寻找，直到找到匹配的 catch
+
+- 异常类：用于在 throw 表达式和相关的 catch 子句之间传递异常处理的具体信息
+
+  ![image-20210604181042370](https://gitee.com/sparkle_zz/markdown-pics/raw/master/20210604181042.png)
+
+```c++
+int main(){
+    cout << "题目：编写一段程序，从标准输入读取两个整数，输出第一个数除以第二个数的结果。使得当第二个数是0时抛出异常。" <<endl;
+    cout << "读取两个整数：" <<endl;
+    string str;
+    int n1, n2;
+    while (cin >> n1 >> n2){
+        try {
+            if (n2 == 0) throw runtime_error("n2 is 0 !!");
+            else cout << "n1 / n2 : " << n1 / n2 << endl;
+        }
+        catch(runtime_error err){
+            cout << err.what() << "\n Try Again ? y or n" << endl;
+            char c;
+            cin >> c;
+            if(c == 'n') return  0;
+            else{
+                cout << "please input tow numbers: " << endl;
+            }
+        }
+    }
+    return 0;
+}
 ```
 

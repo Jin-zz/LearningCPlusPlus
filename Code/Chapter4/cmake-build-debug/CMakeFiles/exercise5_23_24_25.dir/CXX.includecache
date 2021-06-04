@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter4/exercise5_23_24_25.cpp
+exercise5_23_24_25.h
+/Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter4/exercise5_23_24_25.h
+iostream
+-
+sstream
+-
+
+/Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter4/exercise5_23_24_25.h
+

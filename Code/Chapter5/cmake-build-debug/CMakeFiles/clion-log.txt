@@ -1,0 +1,7 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter5
+    -- src/CMakeCXXCompilerId.cpp will be compiled to bin/CMakeCXXCompilerId
+    -- src/exericse6_4.cpp will be compiled to bin/exericse6_4
+    -- src/main.cpp will be compiled to bin/main
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter5/cmake-build-debug

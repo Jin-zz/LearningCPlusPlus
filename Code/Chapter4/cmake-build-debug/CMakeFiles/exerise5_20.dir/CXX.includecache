@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter4/exercise5_14.cpp
+exercise5_14.h
+/Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter4/exercise5_14.h
+iostream
+-
+vector
+-
+
+/Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter4/exercise5_14.h
+
+/Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter4/exerise5_20.cpp
+exerise5_20.h
+/Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter4/exerise5_20.h
+iostream
+-
+
+/Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter4/exerise5_20.h
+

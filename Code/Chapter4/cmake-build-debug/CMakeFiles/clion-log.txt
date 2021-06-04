@@ -1,0 +1,10 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter4
+    -- src/CMakeCXXCompilerId.cpp will be compiled to bin/CMakeCXXCompilerId
+    -- src/exercise5_14.cpp will be compiled to bin/exercise5_14
+    -- src/exercise5_19.cpp will be compiled to bin/exercise5_19
+    -- src/exercise5_20.cpp will be compiled to bin/exercise5_20
+    -- src/exercise5_23_24_25.cpp will be compiled to bin/exercise5_23_24_25
+    -- src/main.cpp will be compiled to bin/main
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter4/cmake-build-debug

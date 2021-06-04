@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter5/exericse6_4.cpp
+exericse6_4.h
+/Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter5/exericse6_4.h
+iostream
+-
+
+/Users/jinzhuoqun/Documents/LearningCPlusPlus/Code/Chapter5/exericse6_4.h
+
